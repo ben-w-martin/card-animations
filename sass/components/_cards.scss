@@ -9,24 +9,18 @@
     justify-content: center;
     align-items: center;
 
-    &:nth-of-type(even) > div:hover {
-
-
+    &:nth-of-type(even) > div:hover { // to get even / odd nth of type, parent selector is required;
       box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.2);
       transform: rotate(1deg) scale(1.05);
     }
 
     &:nth-of-type(odd) > div:hover {
-
-
       box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.2);
       transform: rotate(-1deg) scale(1.05);
     }
-
   }
 
   &__card {
-
     background-color: burlywood;
     border-radius: 1rem;
     padding: 1rem;
@@ -38,9 +32,6 @@
     backface-visibility: hidden;
 
     &--text {
-
     }
   }
-
-
 }
