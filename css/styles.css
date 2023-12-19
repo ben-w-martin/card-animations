@@ -1,0 +1,94 @@
+/*
+  Breakpoints:
+  - Up to 600px width     Phone
+  - Up to 900px width     Tablet portrait
+  - Up to 1200px width    Tablet landscape
+  - Up to 1800px width    avg desktop
+
+$break arg choices:
+ - phone
+ - tab-port
+ - tab-land
+ - big-desktop
+ */
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.row {
+  background-color: blanchedalmond;
+  border: 2px solid brown;
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  background-color: antiquewhite;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #222;
+  padding: 3rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards__spacer {
+  width: 33.333333%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards__spacer:nth-of-type(even) > div:hover {
+  box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.2);
+  transform: rotate(1deg) scale(1.05);
+}
+.cards__spacer:nth-of-type(odd) > div:hover {
+  box-shadow: 0 4px 20px 3px rgba(0, 0, 0, 0.2);
+  transform: rotate(-1deg) scale(1.05);
+}
+.cards__card {
+  background-color: burlywood;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 100%;
+  max-width: 25rem;
+  transition: all 0.7s ease-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/*# sourceMappingURL=styles.css.map */
